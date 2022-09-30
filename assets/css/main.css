@@ -1949,21 +1949,13 @@ input, select, textarea {
 	.button {
 		position: relative;
 		display: inline-block;
-		border-radius: 0.35em;
+		border-radius: 4px;
 		color: #fff !important;
 		text-decoration: none;
-		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #8ebebc;
+		padding: 0.5em 0.5em 0.5em 0.5em;
+		background-color: #008CBA;
 		border: 0;
 		cursor: pointer;
-		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
-		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
-		background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
-		background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
-		-moz-transition: background-color 0.35s ease-in-out;
-		-webkit-transition: background-color 0.35s ease-in-out;
-		-ms-transition: background-color 0.35s ease-in-out;
-		transition: background-color 0.35s ease-in-out;
 	}
 
 		input[type="button"]:hover,
@@ -1971,7 +1963,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #9ececc;
+			background-color: #008bba7a;
 		}
 
 		input[type="button"]:active,
@@ -1979,7 +1971,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #7eaeac;
+			background-color: #008bba7a;
 		}
 
 /* Item */
@@ -2216,19 +2208,20 @@ input, select, textarea {
 		#main > section {
 			margin: 0;
 			overflow: hidden;
-			padding: 4em 0;
+			padding: 3em 0;
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: center;
 			background-image: url("images/overlay.png");
 		}
 
 			#main > section.dark {
-				color: #ddd;
-				color: rgba(255, 255, 255, 0.75);
+				color: #041C32;
+				color: #041C32;/*rgba(255, 255, 255, 1);*/
 			}
 
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
 					color: inherit;
+					font-weight: bolder;
 				}
 
 				#main > section.dark strong {
@@ -2246,10 +2239,11 @@ input, select, textarea {
 					}
 
 			#main > section.cover {
-				padding: 10em 0;
+				padding: 5em 0;
 				background-size: cover;
 				background-position: center center;
 			}
+
 
 			#main > section.one {
 				background-color: #81918E;
